@@ -27,7 +27,7 @@ body {
 	background: #eceeee;
 	border: 1px solid #42464b;
 	border-radius: 6px;
-	height: 257px;
+	height: 240px;
 	margin: 10px auto 0;
 	width: 298px;
 }
@@ -162,12 +162,23 @@ input[type="submit"]:active {
   background-color: f7f7f7;
 }
 
+header {
+    padding: 1em;
+    color: gray;
+    background-color:#4CAEE3;
+    clear: left;
+    text-align: center;  
+}
+
 </style>
 </head>
 <body class="backstyle">
-<div style="height: 120px;"></div>
+<header>
+   <h1>Consult-IT Login Page</h1>
+</header>
+<div style="height: 100px;"></div>
 <div style="text-align: center;color:#2d2c2c;
-    font-weight:bold;font-size: 22px;font-style: italic;">Sign in to consult-it</div>
+    font-weight:bold;font-size: 22px;font-style: italic;">Sign in to consult-IT</div>
 	<div class="login">
 		<input type="text" placeholder="Username" id="username"> <input
 			type="password" placeholder="password" id="password"> <a
@@ -175,6 +186,8 @@ input[type="submit"]:active {
 			value="Sign In">
 	</div>
 	<div class="shadow"></div>
+	<div><jsp:include page="footer.jsp" /></div>
+	<!-- <footer>Copyright &copy; <a href="http://consult-it.in/" target="_blank">consult-it.in</a></footer> -->
 </body>
 </html>
 
