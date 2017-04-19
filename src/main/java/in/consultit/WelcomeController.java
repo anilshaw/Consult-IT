@@ -16,9 +16,8 @@ public class WelcomeController {
 
 	
 	@RequestMapping("/")
-	public String welcome(Map<String, Object> model) {
-		model.put("message", this.message);
-		return "welcome";
+	public String welcome() {
+		return "login";
 	}
 	
 	@RequestMapping("/login")
