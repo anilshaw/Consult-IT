@@ -164,8 +164,8 @@ input[type="submit"]:active {
 
 header {
     padding: 1em;
-    color: gray;
-    background-color:#4CAEE3;
+    color: #ECF0F1;
+    background-color: #4CAEE3;
     clear: left;
     text-align: center;  
 }
@@ -173,20 +173,24 @@ header {
 </style>
 </head>
 <body class="backstyle">
+
 <header>
-   <h1>Consult-IT Login Page</h1>
+   <h1>Consult-IT Enterprise Platform</h1>
 </header>
 <div style="height: 100px;"></div>
+<form action="/consultit/mainpage" method="post">
 <div style="text-align: center;color:#2d2c2c;
     font-weight:bold;font-size: 22px;font-style: italic;">Sign in to consult-IT</div>
 	<div class="login">
 		<input type="text" placeholder="Username" id="username"> <input
 			type="password" placeholder="password" id="password"> <a
-			href="#" class="forgot">forgot password?</a> <input type="submit"
-			value="Sign In">
+			href="#" class="forgot">forgot password?</a> 
+			<input type="submit" value="Sign In">
 	</div>
+	</form>
 	<div class="shadow"></div>
-	<div><jsp:include page="footer.jsp" /></div>
+	<div><jsp:include page="login_footer.jsp" /></div>
+	
 	<!-- <footer>Copyright &copy; <a href="http://consult-it.in/" target="_blank">consult-it.in</a></footer> -->
 </body>
 </html>
